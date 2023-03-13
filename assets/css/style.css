@@ -202,8 +202,8 @@ button {
 }
 
 #audio-player-container p {
-  position: relative;
-  /* color:rgb(245, 245, 245); */
+  position: absolute;
+  left:100%;
   justify-content: left;
   margin: 0;
   text-decoration: none;
