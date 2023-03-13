@@ -678,7 +678,7 @@ summary{
     }
 
     #audio-player-container a {
-      position: relative;
+      /* position: relative; */
       color:rgb(245, 245, 245);
       justify-content:center;
       margin: 0;
@@ -688,8 +688,7 @@ summary{
       padding-left:3px;
       padding-right:3px;
       border-radius:5px;
-      left:1.5rem;
-      top:-0.2rem;
+  
     }
 
     #audio-player-container p {
