@@ -27,7 +27,7 @@ const playAnimation = lottieWeb.loadAnimation({
   name: "Play Animation",
 });
 
-
+let playIcons = document.querySelector(".playBtn");
 
 playAnimation.goToAndStop(14, true);
 
@@ -37,11 +37,13 @@ playIconContainer.addEventListener('click', () => {
         playAnimation.playSegments([14, 27], true);
         requestAnimationFrame(whilePlaying);
         playState = 'pause';
+        playIcons.src = "assets/images/stop.png";
     } else {
         audio.pause();
         playAnimation.playSegments([0, 14], true);
         cancelAnimationFrame(raf);
         playState = 'play';
+        playIcons.src = "assets/images/play.png";
     }
 });
 
@@ -95,6 +97,7 @@ const whilePlaying = () => {
     currentTimeContainer.textContent = calculateTime(seekSlider.value);
     audioPlayerContainer.style.setProperty('--seek-before-width', `${seekSlider.value / seekSlider.max * 100}%`);
     raf = requestAnimationFrame(whilePlaying);
+
     // console.log(audio.currentTime);
 
     //Highlight footnotes

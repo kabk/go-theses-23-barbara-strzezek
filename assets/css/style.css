@@ -226,6 +226,16 @@ p {
 path {
     stroke: black;
 }
+
+.playBtn {
+    position: relative;
+    height: 100%;
+}
+
+svg {
+    display: none;
+}
+
 .time {
     display: inline-block;
     width: 37px;
@@ -395,9 +405,10 @@ font-weight: normal;
 
 .times {
   position: relative;
-  width:100%;
+  width:80%;
   height: 19px;
   top:0;
+  left: 10%;
   margin:30px 2.5% 5px 2.5%;
 }
 
@@ -408,6 +419,7 @@ font-weight: normal;
   height: 20vH;
   top:0;
   z-index: 30;
+  pointer-events: none;
 }
 
 .vl {
@@ -419,8 +431,7 @@ font-weight: normal;
   width: 2px;
   height: 3vH;
 }
-
-.description span {
+.description > span {
   top: 0;
   width: 100%;
   display: block;
@@ -433,9 +444,16 @@ font-weight: normal;
   display:inline-block;
 } */
 
-.description span p{
+.description > span p {
   font-size: 0.4rem;
   display:none;
+}
+.description > span > span {
+  pointer-events: all;
+  cursor: pointer;
+}
+.description > span > span:hover + br + p {
+  display: inline-block !important;
 }
 /*
 div.description:hover + .description span p {
@@ -614,6 +632,8 @@ summary{
         height:100%;
         font-size: 0.6rem;
         margin-top: 10vH;
+
+      counter-reset: footnoteCounter;
     }
 
     .footnotes-mobile > span {
@@ -626,6 +646,10 @@ summary{
       display: block;
       font-size: 0.6rem;
       text-align: center;
+    }
+    .footnotes-mobile > span:before {
+      counter-increment: footnoteCounter;
+      content: counter( footnoteCounter ) ". ";
     }
 
     .hidden-at-start-mobile {
@@ -898,14 +922,12 @@ summary{
       top:74%;
       left:0;
     }
-
     #audio-player-container p {
         position: absolute;
         bottom: -6vH;
         left: 5vW;
         font-size: 1rem;
     }
-
     .description span {
       top: 0;
       width: 100%;
@@ -915,6 +937,9 @@ summary{
       text-align: center;
       color:black;
     }
+
+
+
   /* styles for screen sizes 779px, should covers 'mobile' and 'tablet' */
   /* style this one first and then use the two others to 'override' some styles (exceptions/details) */
 
