@@ -100,8 +100,12 @@ body {
     height: 63vH;
     left: 5vW;
     top:25vH;
+}
+
+.note-container p {
     color: green;
 }
+
 
 .note-container-mobile {
     display: none;
@@ -139,7 +143,7 @@ color:rgb(245, 245, 245);
   position: absolute;
   left: 0; top: 0;
 
-  color:rgb(211, 208, 207);
+  color:green;
   counter-increment: footnoteCounter;
   content: counter( footnoteCounter );
 
@@ -193,7 +197,7 @@ hr {
   padding-top:3px;
   padding-left:3px;
   padding-right:3px;
-  border-radius:5px;
+  border-radius:0px;
   /* left:1.5rem;
   top:-0.2rem; */
 }
@@ -221,7 +225,7 @@ p {
     margin: 0;
     padding: 15px;
     text-align: center;
-     border-radius: 5px;
+     border-radius: 2px;
 }
 
 #play-icon {
@@ -324,14 +328,14 @@ input[type="range"]::-webkit-slider-thumb {
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    background-color: rgb(211, 208, 207);
+    background-color: green;
 ;
     cursor: pointer;
     margin: -12px 0 0 0;
 }
 input[type="range"]:active::-webkit-slider-thumb {
-    transform: scale(1.2);
-    background: black;
+    transform: scale(1.4);
+    background: green;
 }
 input[type="range"]::-moz-range-track {
     width: 100%;
@@ -492,11 +496,11 @@ font-weight: normal;
 
 
 #ch1 {
-  left:12%;
+  left:0%;
 }
 
 #ch2 {
-  left:22%;
+  left:12%;
 }
 
 #ch3 {
@@ -520,11 +524,11 @@ font-weight: normal;
 }
 
 #ch8 {
-  left:65%;
+  left:75%;
 }
 
 #ch9 {
-  left:74%;
+  left:84%;
 }
 
 
@@ -642,6 +646,7 @@ summary{
 
     .note-container {
         display: none;
+
     }
 
     .note-container-mobile {
