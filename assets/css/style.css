@@ -891,11 +891,7 @@ summary{
     }
 
     #duration {
-        position: absolute;
         display: none;
-        /* left: 2.5vW; */
-        top:88vH;
-        font-size: 0.8rem;
     }
 
     .vl {
@@ -904,6 +900,7 @@ summary{
       position: absolute;
       left:5px;
       height:20px;
+      top:0;
 
     }
 
@@ -923,7 +920,7 @@ summary{
 
     #ch1 {
     top:0%;
-        left:0%;
+    left:0%;
     }
 
     #ch2 {
