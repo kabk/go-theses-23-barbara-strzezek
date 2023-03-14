@@ -985,7 +985,7 @@ summary{
 
       .showcontent span p{
         top:10vH;
-        width:100%;
+        width:auto;
         font-size:0.8rem;
       }
 
