@@ -223,9 +223,9 @@ p {
     transform: translateX(-50%);
     z-index: 9999;
     margin: 0;
-    padding: 15px;
+    padding: 6px;
     text-align: center;
-     border-radius: 2px;
+    border-radius: 2px;
 }
 
 #play-icon {
@@ -684,6 +684,7 @@ summary{
     .footnotes-mobile > span:before {
       counter-increment: footnoteCounter;
       content: counter( footnoteCounter ) ". ";
+      color:green;
     }
 
     .hidden-at-start-mobile {
@@ -731,6 +732,7 @@ summary{
       justify-content: left;
       margin: 0;
       text-decoration: none;
+      display: none;
 
     }
 
@@ -970,6 +972,10 @@ summary{
       text-align: center;
       color:black;
     }
+
+    .description > span p{
+        display:none;
+      }
 
 
 
