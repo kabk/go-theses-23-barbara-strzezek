@@ -162,11 +162,6 @@ seekSlider.addEventListener('change', () => {
 
 });
 
-
-
-
-
-
 const scrollContainer = document.querySelector(".footnotes");
 
 scrollContainer.addEventListener("wheel", (evt) => {

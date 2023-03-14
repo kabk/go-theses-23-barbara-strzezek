@@ -100,6 +100,7 @@ body {
     height: 63vH;
     left: 5vW;
     top:25vH;
+    color: green;
 }
 
 .note-container-mobile {
@@ -156,17 +157,10 @@ color:rgb(245, 245, 245);
   /* text-shadow: grey 1px 0 7px; */
 }
 
-button {
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-    outline: none;
-    width: 40px;
-    height: 40px;
-    float: left;
-    z-index: 10000000;
+hr {
+    display: none;
 }
+
 #audio-player-container {
   --seek-before-width: 0%;
     --volume-before-width: 100%;
@@ -174,8 +168,12 @@ button {
     position: absolute;
     width: 100vW;
     height: 132px;
+    top: 12vH;
     background: rgb(245, 245, 245);
 }
+
+
+
 #audio-player-container::before {
     position: absolute;
     content: '';
@@ -187,42 +185,58 @@ button {
 }
 
 #audio-player-container a {
-  position: relative;
+  /* position: relative; */
   color:rgb(245, 245, 245);
   justify-content:center;
   margin: 0;
   background-color: rgb(211, 208, 207);
-  /* text-decoration: none; */
   padding-top:3px;
   padding-left:3px;
   padding-right:3px;
   border-radius:5px;
-  left:1.5rem;
-  top:-0.2rem;
-}
-
-#audio-player-container p {
-  position: absolute;
-  left:100%;
-  justify-content: left;
-  margin: 0;
-  text-decoration: none;
-
+  /* left:1.5rem;
+  top:-0.2rem; */
 }
 
 p {
     position: relative;
     display: flex;
-
     color: rgb(211, 208, 207);
     justify-content: center;
     margin-bottom: 10px;
     font-size: .6rem;
     /* background: #fff; */
 }
+
+.showcontent span p{
+  display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    position: absolute;
+    top:10vH;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+     border-radius: 5px;
+}
+
 #play-icon {
     margin:14px 2.5% 10px 2.5%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    float: left;
+    z-index: 10000000;
 }
+
 path {
     stroke: black;
 }
@@ -276,7 +290,7 @@ output {
 input[type="range"] {
     position: relative;
     -webkit-appearance: none;
-    width: 70%;
+    width: 78%;
     margin: 0;
     padding: 0;
     /* height: 19px; */
@@ -284,7 +298,7 @@ input[type="range"] {
     float: left;
     outline: none;
     background:rgb(245, 245, 245);
-    z-index: 10000;
+    z-index: 8000;
 
 }
 input[type="range"]::-webkit-slider-runnable-track {
@@ -373,13 +387,13 @@ input[type="range"]:active::-ms-thumb {
 }
 
 a {
-  color: var(--color-text-link);
-  text-decoration: none;
+  font-family: 'plantin-i';
+  color: white;
+  text-decoration: underline;
 }
 
-a:hover {
-  color: var(--color-text-link-hover);
-  text-decoration: underline;
+a:hover {;
+  text-decoration: none;
 }
 
 a:focus-visible {
@@ -391,16 +405,34 @@ h1{
   /* font-family: 'Clerica'; */
 display: flex;
 font-size:1em;
+height: 40px;
 font-family: 'Tagettes';
-/* -webkit-transform: scale(8, 2 );
-        -moz-transform: scale(8, 2);
-        -o-transform: scale(8, 2); */
-        /* transform: scale(900%, 200%); */
 justify-content: center;
-/* color:rgb(211, 208, 207); */
 margin:0;
 -webkit-text-stroke-width: 0px;
 font-weight: normal;
+}
+
+.plus {
+  display: flex;
+  position:relative;
+  left: 50%;
+  font-family: 'Tagettes';
+  justify-content: center;
+  margin:0;
+  -webkit-text-stroke-width: 0px;
+  font-weight: normal;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  text-decoration: underline;
+  color: green;
+}
+
+.plus:hover {
+  text-decoration:none;
 }
 
 .times {
@@ -447,6 +479,8 @@ font-weight: normal;
 .description > span p {
   font-size: 0.4rem;
   display:none;
+  color:black;
+
 }
 .description > span > span {
   pointer-events: all;
@@ -455,12 +489,7 @@ font-weight: normal;
 .description > span > span:hover + br + p {
   display: inline-block !important;
 }
-/*
-div.description:hover + .description span p {
-  font-size: 0.4rem;
-  display: block;
-  color:black;
-} */
+
 
 #ch1 {
   left:12%;
@@ -688,7 +717,7 @@ summary{
       padding-left:3px;
       padding-right:3px;
       border-radius:5px;
-  
+
     }
 
     #audio-player-container p {
