@@ -691,6 +691,10 @@ summary{
         color: black !important;
     }
 
+    .plus {
+      font-size:1.8rem;
+    }
+
     #audio-player-container {
       --seek-before-width: 0%;
         --volume-before-width: 100%;
@@ -779,7 +783,6 @@ summary{
         width: 25px;
         border-radius: 50%;
         background-color: rgb(211, 208, 207);
-    ;
         cursor: pointer;
         margin: -12px 0 0 0;
     }
@@ -852,7 +855,6 @@ summary{
     h1 {
         font-size: 1.2rem;
         margin-top: 1vH;
-        margin-bottom: 1vH;
 
     }
 
