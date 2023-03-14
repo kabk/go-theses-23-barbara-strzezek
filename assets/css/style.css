@@ -776,8 +776,8 @@ summary{
         position: relative;
         -webkit-appearance: none;
         box-sizing: content-box;
-        height: 25px;
-        width: 25px;
+        height: 30px;
+        width: 30px;
         border-radius: 50%;
         background-color: green;
         cursor: pointer;
@@ -885,9 +885,9 @@ summary{
 
     #current-time {
         position: absolute;
-        top:8.8vH;
+        top:20px;
         font-size: 0.8rem;
-        left:5px;
+        left:45px;
     }
 
     #duration {
@@ -903,7 +903,7 @@ summary{
       transform: rotate(90deg);
       position: absolute;
       left:5px;
-      height:12px;
+      height:20px;
 
     }
 
