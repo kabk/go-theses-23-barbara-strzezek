@@ -666,8 +666,8 @@ summary{
         height:100%;
         font-size: 0.6rem;
         margin-top: 10vH;
-
-      counter-reset: footnoteCounter;
+        margin-right: 10px;
+        counter-reset: footnoteCounter;
     }
 
     .footnotes-mobile > span {
@@ -678,7 +678,7 @@ summary{
       background-color: none;
       font-family: 'Plantin';
       display: block;
-      font-size: 0.6rem;
+      font-size: 0.7rem;
       text-align: center;
     }
     .footnotes-mobile > span:before {
