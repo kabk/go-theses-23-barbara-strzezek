@@ -456,10 +456,14 @@ font-weight: normal;
   outline: none;
   text-decoration: underline;
   color: green;
+  transform: rotate(0);
+  transform-origin: 50 50;
+  transition: transform 0.3s ease-in-out;
 }
 
 .plus:hover {
   text-decoration:none;
+  transform: rotate(45deg);
 }
 
 .times {
