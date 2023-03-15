@@ -454,12 +454,23 @@ font-weight: normal;
   background: transparent;
   cursor: pointer;
   outline: none;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   color: green;
   transform: rotate(0);
   transform-origin: 50 50;
   transition: transform 0.3s ease-in-out;
+  /* animation-name: changecolor;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    text-decoration: underline; */
 }
+
+/* @keyframes changecolor {
+  0%{color: green}
+  50%{color: lightgrey}
+  100%{color: green}
+} */
 
 .plus:hover {
   text-decoration:none;
