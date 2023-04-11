@@ -454,7 +454,7 @@ font-weight: normal;
   background: transparent;
   cursor: pointer;
   outline: none;
-  /* text-decoration: underline; */
+  text-decoration: underline;
   color: green;
   transform: rotate(0);
   transform-origin: 50 50;
@@ -503,6 +503,19 @@ font-weight: normal;
   width: 2px;
   height: 3vH;
 }
+
+
+.vl2 {
+  position: relative;
+  top:0;
+  display: block;
+  left:50%;
+  background-color: black;
+  width: 2px;
+  height: 5vH;
+}
+
+
 .description > span {
   top: 10px;
   width: 100%;
@@ -536,35 +549,35 @@ font-weight: normal;
 }
 
 #ch2 {
-  left:10%;
+  left:9.8%;
 }
 
 #ch3 {
-  left:29%;
+  left:24.2%;
 }
 
 #ch4 {
-  left:36%;
+  left:37.4%;
 }
 
 #ch5 {
-  left:45%;
+  left:39%;
 }
 
 #ch6 {
-  left:53%;
+  left:41.4%;
 }
 
 #ch7 {
-  left:58%;
+  left:49.4%;
 }
 
 #ch8 {
-  left:75%;
+  left:65.4%;
 }
 
 #ch9 {
-  left:84%;
+  left:93.1%;
 }
 
 
