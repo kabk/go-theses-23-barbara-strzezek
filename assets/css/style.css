@@ -130,12 +130,12 @@ color:rgb(245, 245, 245);
   padding: 0 35px 10px;
   padding-right: 5px;
   background-color: none;
-  transition: background-color 0.5s ease-in-out;
+  transition: background-color 1s ease-in-out;
   font-family: 'Plantin';
   display: block;
 }
 .footnotes > span.hidden-at-start {
-  transition: opacity .5s;
+  transition: opacity 1s;
   opacity: 0;
 }
 
@@ -149,15 +149,16 @@ color:rgb(245, 245, 245);
 
   display: inline-block;
 }
-.footnotes > span.hidden-at-start:before {
+
+/* .footnotes > span.hidden-at-start:before {
   color: #000;
-}
+} */
 
 .footnotes > span.active {
    opacity: 1;
    }
 .footnotes > span.active > span {
-  color:black;
+  /* color:black; */
   /* text-shadow: grey 1px 0 7px; */
 }
 
@@ -200,6 +201,17 @@ hr {
   border-radius:0px;
   /* left:1.5rem;
   top:-0.2rem; */
+}
+
+
+.song {
+  text-shadow:  green 1px 0 10px;
+  color:white !important;
+
+}
+
+.darker {
+  color:darkgrey !important;
 }
 
 p {
@@ -346,18 +358,18 @@ input[type="range"]::-webkit-slider-thumb {
     position: relative;
     -webkit-appearance: none;
     box-sizing: content-box;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     background-color: green;
     cursor: pointer;
-    transform: translateX(-50%);
-    margin: -12px 0 0 0;
+    /* transform: translateX(-50%); */
+    margin: -10px 0 0 0;
 }
 input[type="range"]:active::-webkit-slider-thumb {
-    transform: scale(1.4);
+    /* transform: scale(1.4); */
     background: green;
-    transform: translateX(-50%);
+    /* transform: translateX(-50%); */
 
 }
 input[type="range"]::-moz-range-track {
@@ -456,9 +468,9 @@ font-weight: normal;
   outline: none;
   text-decoration: underline;
   color: green;
-  transform: rotate(0);
+  /* transform: rotate(0);
   transform-origin: 50 50;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; */
   /* animation-name: changecolor;
     animation-iteration-count: infinite;
     animation-duration: 3s;
@@ -474,7 +486,7 @@ font-weight: normal;
 
 .plus:hover {
   text-decoration:none;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
 }
 
 .times {
@@ -484,6 +496,10 @@ font-weight: normal;
   top:4vh;
   left: 11.5%;
 }
+
+/* .rotated {
+transform: rotate(90deg);
+} */
 
 .timesloth {
   position: absolute;
@@ -514,7 +530,6 @@ font-weight: normal;
   width: 2px;
   height: 5vH;
 }
-
 
 .description > span {
   top: 10px;
@@ -549,27 +564,27 @@ font-weight: normal;
 }
 
 #ch2 {
-  left:9.8%;
+  left:9.7%;
 }
 
 #ch3 {
-  left:24.2%;
+  left:23.75%;
 }
 
 #ch4 {
-  left:37.4%;
+  left:36.55%;
 }
 
 #ch5 {
-  left:39%;
+  left:38.2%;
 }
 
 #ch6 {
-  left:41.4%;
+  left:40.45%;
 }
 
 #ch7 {
-  left:49.4%;
+  left:48.3%;
 }
 
 #ch8 {
@@ -577,7 +592,7 @@ font-weight: normal;
 }
 
 #ch9 {
-  left:93.1%;
+  left:92.1%;
 }
 
 
