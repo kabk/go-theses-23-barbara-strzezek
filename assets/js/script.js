@@ -169,3 +169,19 @@ scrollContainer.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollContainer.scrollLeft += evt.deltaY;
 });
+
+// function replaceChapterWithHoveredTimetime() {
+//   const timetimes = document.querySelectorAll('.timetime');
+//   const chapter = document.querySelector('.chapter1');
+//   let chapterInnerHTML = chapter.innerHTML;
+//
+//   timetimes.forEach(timetime => {
+//     timetime.addEventListener('mouseover', () => {
+//       chapter.innerHTML = timetime.innerHTML;
+//       console.log('hey');
+//     });
+//     timetime.addEventListener('mouseout', () => {
+//       chapter.innerHTML = chapterInnerHTML;
+//     });
+//   });
+// }

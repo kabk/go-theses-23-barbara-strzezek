@@ -174,7 +174,7 @@ hr {
     width: 100vW;
     height: 132px;
     top: 12vH;
-    background: rgb(245, 245, 245);
+    /* background: rgb(245, 245, 245); */
 }
 
 
@@ -205,13 +205,15 @@ hr {
 
 
 .song {
-  text-shadow:  green 1px 0 10px;
-  color:white !important;
+  text-shadow:  grey 1px 0 10px;
+  color: white !important;
+  text-decoration-style: dashed;
+  text-decoration-color: lightgreen;
 
 }
 
 .darker {
-  color:darkgrey !important;
+  color:grey !important;
 }
 
 p {
@@ -223,6 +225,15 @@ p {
     font-size: .6rem;
     /* background: #fff; */
 }
+
+
+    .chapter1 {
+      position: relative;
+      width:100%;
+      top:12px;
+      font-size:.6rem;
+      text-align:center;
+    }
 
 .showcontent span p{
     display: block;
@@ -507,6 +518,7 @@ transform: rotate(90deg);
   width:50px;
   height: 20vH;
   top:0;
+  pointer-events: none;
   z-index: 30;
 }
 
@@ -539,6 +551,11 @@ transform: rotate(90deg);
   font-size: 0.4rem;
   text-align: center;
   color:black;
+  border: 2px dotted white;
+  /* background-color:lightgrey; */
+  border-radius: 50%;
+  width:100px;
+  left:-1rem;
 }
 /* .description span:hover + p{
   display:inline-block;
@@ -551,6 +568,7 @@ transform: rotate(90deg);
 
 }
 .description > span > span {
+  /* background: green; */
   pointer-events: all;
   cursor: pointer;
 }
@@ -564,31 +582,31 @@ transform: rotate(90deg);
 }
 
 #ch2 {
-  left:9.7%;
+  left:10.55%;
 }
 
 #ch3 {
-  left:23.75%;
+  left:24.7%;
 }
 
 #ch4 {
-  left:36.55%;
+  left:37.5%;
 }
 
 #ch5 {
-  left:38.2%;
+  left:39.2%;
 }
 
 #ch6 {
-  left:40.45%;
+  left:41.5%;
 }
 
 #ch7 {
-  left:48.3%;
+  left:49.3%;
 }
 
 #ch8 {
-  left:65.4%;
+  left:66.4%;
 }
 
 #ch9 {
@@ -598,6 +616,7 @@ transform: rotate(90deg);
 
 .italic {
 font-family:'Eldorado';
+font-size:0.58rem;
 }
 
 
@@ -742,7 +761,7 @@ summary{
       background-color: none;
       font-family: 'Plantin';
       display: block;
-      font-size: 0.7rem;
+      /* font-size: 0.7rem; */
       text-align: center;
     }
     .footnotes-mobile > span:before {
@@ -761,6 +780,7 @@ summary{
       left:50%;
       transform: translateX(-50%);
     }
+
 
     #audio-player-container {
       --seek-before-width: 0%;
@@ -788,7 +808,7 @@ summary{
       color:rgb(245, 245, 245);
       justify-content:center;
       margin: 0;
-      background-color: rgb(211, 208, 207);
+      /* background-color: rgb(211, 208, 207); */
       /* text-decoration: none; */
       padding-top:3px;
       padding-left:3px;
@@ -907,7 +927,7 @@ summary{
         cursor: pointer;
     }
     input[type="range"]:active::-ms-thumb {
-        transform: scale(1.2);
+        /* transform: scale(1.2); */
         background: #007db5;
     }
 
@@ -985,6 +1005,16 @@ summary{
 
     }
 
+    .vl2 {
+      transform-origin: 0 0;
+      transform: rotate(90deg);
+      position: absolute;
+      left:5px;
+      height:20px;
+      top:0;
+
+    }
+
     .times {
       position: absolute;
       height:78vh;
@@ -1003,47 +1033,47 @@ summary{
     }
 
     #ch1 {
-    top:0%;
-    left:0%;
+      top:0%;
+      left:0%;
     }
 
     #ch2 {
-      top:12%;
-        left:0%;
+      top:10.85%;
+      left:0%;
     }
 
     #ch3 {
-    top:29%;
-        left:0%;
+      top:24.7%;
+      left:0%;
     }
 
     #ch4 {
-    top:36%;
-        left:0%;
+      top:37.3%;
+      left:0%;
     }
 
     #ch5 {
-    top:45%;
-        left:0%;
+      top:39.1%;
+      left:0%;
     }
 
     #ch6 {
-    top:53%;
-        left:0%;
+      top:41.2%;
+      left:0%;
     }
 
     #ch7 {
-    top:58%;
-        left:0%;
+      top:48.8%;
+      left:0%;
     }
 
     #ch8 {
-    top:75%;
-        left:0%;
+      top:66%;
+      left:0%;
     }
 
     #ch9 {
-    top:84%;
+      top:91.1%;
       left:0%;
     }
 
@@ -1054,8 +1084,8 @@ summary{
         font-size: 1rem;
     }
     .description span {
-      top: 0px;
-      left: 10px;
+      top: -2px;
+      left: 8px;
       width: auto;
       display: block;
       position: relative;
