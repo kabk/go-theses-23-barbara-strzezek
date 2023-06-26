@@ -88,9 +88,9 @@ const setSliderMax = () => {
 }
 
 const displayBufferedAmount = () => {
+    if (audio.buffered.length <= 0) return;
     const bufferedAmount = Math.floor(audio.buffered.end(audio.buffered.length - 1));
     audioPlayerContainer.style.setProperty('--buffered-width', `${(bufferedAmount / seekSlider.max) * 100}%`);
-
 }
 
 const whilePlaying = () => {
